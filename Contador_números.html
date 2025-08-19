@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: lightblue;
+            text-align: center;
+            padding-top: 50px;
+        }
+
+        #número{
+            font-size: 45px;
+            font-weight: bold;
+            margin: 20px;
+        }
+
+        button{
+            background-color: blue;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Contador de números</h1>
+    <p id="número">0</p>
+    <button id="botão">Clique aqui</button>
+    <button id="zerar">Zerar</button>
+    <script>
+        let contador = 0
+        document.getElementById("botão").addEventListener("click", function(){contador++;
+
+        document.getElementById("número").textContent = contador;
+        })
+
+        document.getElementById("zerar").addEventListener("click", function(){contador=0;
+        
+        document.getElementById("número").textContent=contador=0;
+        });
+
+
+    </script>
+</body>
+</html>

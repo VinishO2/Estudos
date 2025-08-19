@@ -1,0 +1,65 @@
+body{
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    height: 100vh;  /* Ocupa a altura total da tela */
+    background-color: #f0f0f0;
+}
+
+#calculadora{
+    border: 2px solid #333; /* Borda escura */
+    border-radius: 10px; /* Cantos arredondados */
+    padding: 20px;
+    background-color: #ccc;
+    box-shadow: 5px 5px 10px #888888; /* Sombra para dar profundidade */
+}
+
+/* Estilo para o container dos botões */
+
+#botoes {
+    display: grid; /* transforma o container em uma grade */
+    grid-template-columns: repeat(4, 1fr); /* A linha mágica: cria 4 colunas de tamanho igual */
+    gap: 10px; /* Espaçamento de 10px entre os botões */
+}
+
+/* Estilo para TODOS os botões */
+button {
+    padding: 20px;
+    font-size: 24px;
+    border: 1px solid #999;
+    border-radius: 5px;
+    cursor: pointer; /* Muda o cursor para uma "mãozinha" ao passar por cima */
+    background-color: #f9f9f9;
+}
+
+/* Efeito ao passar o mouse por cima do botão */
+
+button:hover {
+    background-color: #e9e9e9;
+}
+
+#visor {
+    flex-grow: 1;
+    padding: 20px;
+    font-size: 28px;
+    text-align: right; /* Alinha os números à direita */
+    border: 2px solid #999;
+    border-radius: 5px;
+    margin-bottom: 0; /*Cria um espaço entre o visor e os botões */
+    box-sizing: border-box; /* Garante que o padding não altere a largura total */
+    background-color: #e3e3e3;
+
+}
+
+#grupo-visor {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#Limpar {
+    padding: 20px;
+    font-size: 24px;
+    margin-left: 10px;
+    background-color: #ff8c8c;
+}
