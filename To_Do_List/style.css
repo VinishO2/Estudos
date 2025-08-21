@@ -1,0 +1,8 @@
+li{
+    color: black;
+}
+
+.tarefa-concluida {
+    text-decoration: line-through;
+    color: #888;
+}
