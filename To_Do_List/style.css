@@ -6,3 +6,11 @@ li{
     text-decoration: line-through;
     color: #888;
 }
+
+.btn-remover{
+    background-color: #ff5757;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+}

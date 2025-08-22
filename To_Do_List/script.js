@@ -9,17 +9,25 @@ botaoAdicionar.addEventListener('click', function(){
 
     console.log("Texto capturado: ", textoDaTarefa);
 
-    const novoLi = document.createElement('li');
-    novoLi.textContent = textoDaTarefa;
-    listaDeTarefas.appendChild(novoLi);
+    const novoLi = document.createElement('li'); //<li> cria um item para a lista
+
+    const botaoRemover = document.createElement('button')
+        botaoRemover.textContent = 'X';
+    
+    novoLi.appendChild(botaoRemover);
+
+    novoLi.textContent = textoDaTarefa; 
+
+    listaDeTarefas.appendChild(novoLi); // a "listaDeTarefas" funciona como um "pai/mae" e o "novoLi" funciona como "filho"
     campoDeTexto.value = '';
 
 });
 
+
 listaDeTarefas.addEventListener('click', function(event){
-
+    if(event.target.classList.contains('tarefa-concluida')) {
+        event.remove(listaDeTarefas);
+    } else {event.target.classList.toggle("tarefa-concluida");
+    };
 });
 
-botaoLimpar.addEventListener('click', function(){
-    
-});
